@@ -8,16 +8,16 @@
     <title>Paises</title>
 </head>
 <body>
-    <h1><center>Paises de la región</center></h1>
+    <h1><center>Paises de la región</center></h1><br>
 
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>Nombre</th>
-                <th>Capital</th>
-                <th>Moneda</th>
-                <th>Población</th>
-                <th>Ciudades</th>
+                <th><center>Nombre</center></th>
+                <th><center>Capital</center></th>
+                <th><center>Moneda</center></th>
+                <th><center>Población</center></th>
+                <th><center>Ciudades</center></th>
             </tr>
         </thead>
         <tbody>
@@ -25,25 +25,25 @@
 
                 <tr>
                     <td rowspan='{{ count($infopais ["ciudades"]) }}'>
-                        {{ $pais }}
+                       <b class="text-primary"><center>{{ $pais }}</center></b> 
                     </td>
 
                     <td rowspan='{{ count($infopais ["ciudades"]) }}'>
-                        {{ $infopais["capital"] }}
+                       <b class="text-success"><center>{{ $infopais["capital"] }}</center></b>
                     </td>
 
                     <td rowspan='{{ count($infopais ["ciudades"]) }}'>
-                        {{ $infopais["moneda"] }}
+                       <b class="text-danger"><center>{{ $infopais["moneda"] }}</center></b>
                     </td>
 
                     <td rowspan='{{ count($infopais ["ciudades"]) }}'>
-                        {{ $infopais["población"] }}
+                       <b class="text-warning"><center>{{ $infopais["población"] }}</center></b>
                     </td>
 
                     @foreach($infopais["ciudades"] as $ciudad)
 
                         <th>
-                            {{ $ciudad }}
+                           <b class="text-info"><center>{{ $ciudad }}</center></b> 
                         </th>
                     </tr>
                     @endforeach
