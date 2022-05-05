@@ -59,7 +59,8 @@ Route::get('paises', function(){
             "población" => 32,
             "ciudades" => [
                 "Arequipa",
-                "Cusco"
+                "Cusco",
+                "Piura"
             ]
         ],
         "Paraguay" => [
@@ -67,19 +68,30 @@ Route::get('paises', function(){
             "moneda" => "Guaraní paraguayo",
             "población" => 7,
             "ciudades" => [
-                "Luque"
+                "Luque",
+                "San Lorenzo",
+                "Ciudad del Este"
             ]
         ],
         "Francia" => [
             "capital" => "Paris",
             "moneda" => "Euro",
-            "población" => 67
+            "población" => 67,
+            "ciudades" => [
+                "Paris",
+                "Marsella",
+                "Lyon"
+            ]
         ],
         "Argentina" => [
             "capital" => "Buenos Aires",
             "moneda" => "Peso Argentino",
-            "población" => 45
-
+            "población" => 45,
+            "ciudades" => [
+                "Córdoba",
+                "Posario",
+                "Mar de plata"
+            ]
         ]
     ];
 
