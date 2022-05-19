@@ -25,6 +25,18 @@
                 <input type="text" placeholder="Precio del producto" id="Precio" name="Precio">
                 <label for="Precio">Precio</label>
             </div>
+
+        <div class="input-field col s8">
+            <select name="" id="marca">
+                @foreach($marcas as $marca)
+                    <option value="">
+                        {{ $marca->nombre }}
+                    </option>
+                @endforeach
+            </select>
+            <label for="marca">Elija Marca</label>
+        </div>
+
         <div class="file-field input-field col s8">
             <div class="btn brown darken-4">
                 <span>Imagen del producto</span>
